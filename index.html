@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+  <header>
+    <section class="header-container">
+      <h1 class="header-title">Simple, traffic-based pricing</h1>
+      <p class="header-desc">Sign-up for our 30-day trial. No credit card required.</p>
+    </section>
+  </header>
+
+  <main>
+    <section class="component">
+      <section class="price">
+        <p id="pageViews" class="price__pageviews">pageviews</p>
+        <p class="price__text"><span id="priceValue" class="price__value">$</span> /month</p>
+
+        <input id="slider" class="price__range" type="range" min="1" max="5" step="1">
+
+        <div class="billing">
+          <p class="billing__text">Monthly Billing</p>
+          <input id="discount" class="billing__period" type="checkbox" name="period">
+          <p class="billing__text">Yearly Billing <span class="billing__text__discount mobile">-25%</span><span
+              class="billing__text__discount desktop">-25% discount</span></p>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="features-list">
+          <div class="feature-item">
+            <img class="feature-item__check" src="images/icon-check.svg" alt="">
+            <p class="feature-item__text">Unlimited websites</p>
+          </div>
+
+          <div class="feature-item">
+            <img class="feature-item__check" src="images/icon-check.svg" alt="">
+            <p class="feature-item__text">100% data ownership</p>
+          </div>
+
+          <div class="feature-item">
+            <img class="feature-item__check" src="images/icon-check.svg" alt="">
+            <p class="feature-item__text">Email reports</p>
+          </div>
+        </div>
+
+        <a class="features__button" href="#">Start my trial</a>
+      </section>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
