@@ -199,6 +199,7 @@ header {
   background-color: var(--clr-neutral-white);
   margin: 0 1.5rem;
   border-radius: 10px;
+  box-shadow: 0px 10px 10px var(--clr-neutral-grayish-blue_empty-slider);
 
   position: relative;
   top: -9rem;
